@@ -31,7 +31,7 @@ module.exports = {
     })],
     devServer: {
         historyApiFallback: true,
-        disableHostCheck: true
+        allowedHosts: "all"
     },
     externals: {
         // global app config object
