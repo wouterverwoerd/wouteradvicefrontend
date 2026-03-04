@@ -1,0 +1,207 @@
+{
+  "Version": 1,
+  "WorkspaceRootPath": "C:\\wouter\\docs\\wouter_apps\\unsolicited_advice_frontend\\",
+  "Documents": [
+    {
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\wouter\\docs\\wouter_apps\\unsolicited_advice_frontend\\src\\index.html||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:src\\index.html||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\wouter\\docs\\wouter_apps\\unsolicited_advice_frontend\\src\\index.jsx||{14D17961-FE51-464D-9111-C4AF11D7D99A}",
+      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:src\\index.jsx||{14D17961-FE51-464D-9111-C4AF11D7D99A}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\wouter\\docs\\wouter_apps\\unsolicited_advice_frontend\\src\\_components\\Nav.jsx||{14D17961-FE51-464D-9111-C4AF11D7D99A}",
+      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:src\\_components\\Nav.jsx||{14D17961-FE51-464D-9111-C4AF11D7D99A}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\wouter\\docs\\wouter_apps\\unsolicited_advice_frontend\\src\\_components\\index.js||{14D17961-FE51-464D-9111-C4AF11D7D99A}",
+      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:src\\_components\\index.js||{14D17961-FE51-464D-9111-C4AF11D7D99A}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\wouter\\docs\\wouter_apps\\unsolicited_advice_frontend\\src\\home\\Index.jsx||{14D17961-FE51-464D-9111-C4AF11D7D99A}",
+      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:src\\home\\Index.jsx||{14D17961-FE51-464D-9111-C4AF11D7D99A}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\wouter\\docs\\wouter_apps\\unsolicited_advice_frontend\\src\\app\\Index.jsx||{14D17961-FE51-464D-9111-C4AF11D7D99A}",
+      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:src\\app\\Index.jsx||{14D17961-FE51-464D-9111-C4AF11D7D99A}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\wouter\\docs\\wouter_apps\\unsolicited_advice_frontend\\src\\advices\\AddEdit.jsx||{14D17961-FE51-464D-9111-C4AF11D7D99A}",
+      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:src\\advices\\AddEdit.jsx||{14D17961-FE51-464D-9111-C4AF11D7D99A}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\wouter\\docs\\wouter_apps\\unsolicited_advice_frontend\\src\\_services\\user.service.js||{14D17961-FE51-464D-9111-C4AF11D7D99A}",
+      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:src\\_services\\user.service.js||{14D17961-FE51-464D-9111-C4AF11D7D99A}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\wouter\\docs\\wouter_apps\\unsolicited_advice_frontend\\src\\_services\\advice.service.js||{14D17961-FE51-464D-9111-C4AF11D7D99A}",
+      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:src\\_services\\advice.service.js||{14D17961-FE51-464D-9111-C4AF11D7D99A}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\wouter\\docs\\wouter_apps\\unsolicited_advice_frontend\\src\\advices\\Index.jsx||{14D17961-FE51-464D-9111-C4AF11D7D99A}",
+      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:src\\advices\\Index.jsx||{14D17961-FE51-464D-9111-C4AF11D7D99A}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\wouter\\docs\\wouter_apps\\unsolicited_advice_frontend\\src\\advices\\List.jsx||{14D17961-FE51-464D-9111-C4AF11D7D99A}",
+      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:src\\advices\\List.jsx||{14D17961-FE51-464D-9111-C4AF11D7D99A}"
+    }
+  ],
+  "DocumentGroupContainers": [
+    {
+      "Orientation": 0,
+      "VerticalTabListWidth": 256,
+      "DocumentGroups": [
+        {
+          "DockedWidth": 200,
+          "SelectedChildIndex": 0,
+          "Children": [
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "index.html",
+              "DocumentMoniker": "C:\\wouter\\docs\\wouter_apps\\unsolicited_advice_frontend\\src\\index.html",
+              "RelativeDocumentMoniker": "src\\index.html",
+              "ToolTip": "C:\\wouter\\docs\\wouter_apps\\unsolicited_advice_frontend\\src\\index.html",
+              "RelativeToolTip": "src\\index.html",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAUAAAAeAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001512|",
+              "WhenOpened": "2026-03-03T20:56:20.006Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "index.jsx",
+              "DocumentMoniker": "C:\\wouter\\docs\\wouter_apps\\unsolicited_advice_frontend\\src\\index.jsx",
+              "RelativeDocumentMoniker": "src\\index.jsx",
+              "ToolTip": "C:\\wouter\\docs\\wouter_apps\\unsolicited_advice_frontend\\src\\index.jsx",
+              "RelativeToolTip": "src\\index.jsx",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003663|",
+              "WhenOpened": "2026-03-03T20:56:16.234Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "Nav.jsx",
+              "DocumentMoniker": "C:\\wouter\\docs\\wouter_apps\\unsolicited_advice_frontend\\src\\_components\\Nav.jsx",
+              "RelativeDocumentMoniker": "src\\_components\\Nav.jsx",
+              "ToolTip": "C:\\wouter\\docs\\wouter_apps\\unsolicited_advice_frontend\\src\\_components\\Nav.jsx",
+              "RelativeToolTip": "src\\_components\\Nav.jsx",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003663|",
+              "WhenOpened": "2026-03-03T20:56:08.103Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "index.js",
+              "DocumentMoniker": "C:\\wouter\\docs\\wouter_apps\\unsolicited_advice_frontend\\src\\_components\\index.js",
+              "RelativeDocumentMoniker": "src\\_components\\index.js",
+              "ToolTip": "C:\\wouter\\docs\\wouter_apps\\unsolicited_advice_frontend\\src\\_components\\index.js",
+              "RelativeToolTip": "src\\_components\\index.js",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001646|",
+              "WhenOpened": "2026-03-03T20:56:01.106Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 5,
+              "Title": "Index.jsx",
+              "DocumentMoniker": "C:\\wouter\\docs\\wouter_apps\\unsolicited_advice_frontend\\src\\app\\Index.jsx",
+              "RelativeDocumentMoniker": "src\\app\\Index.jsx",
+              "ToolTip": "C:\\wouter\\docs\\wouter_apps\\unsolicited_advice_frontend\\src\\app\\Index.jsx",
+              "RelativeToolTip": "src\\app\\Index.jsx",
+              "ViewState": "AgIAAB0AAAAAAAAAAAAgwAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003663|",
+              "WhenOpened": "2026-03-03T20:55:27.934Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
+              "Title": "Index.jsx",
+              "DocumentMoniker": "C:\\wouter\\docs\\wouter_apps\\unsolicited_advice_frontend\\src\\home\\Index.jsx",
+              "RelativeDocumentMoniker": "src\\home\\Index.jsx",
+              "ToolTip": "C:\\wouter\\docs\\wouter_apps\\unsolicited_advice_frontend\\src\\home\\Index.jsx",
+              "RelativeToolTip": "src\\home\\Index.jsx",
+              "ViewState": "AgIAAFcAAAAAAAAAAAAiwCEAAAAuAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003663|",
+              "WhenOpened": "2026-03-03T20:45:10.237Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 7,
+              "Title": "user.service.js",
+              "DocumentMoniker": "C:\\wouter\\docs\\wouter_apps\\unsolicited_advice_frontend\\src\\_services\\user.service.js",
+              "RelativeDocumentMoniker": "src\\_services\\user.service.js",
+              "ToolTip": "C:\\wouter\\docs\\wouter_apps\\unsolicited_advice_frontend\\src\\_services\\user.service.js",
+              "RelativeToolTip": "src\\_services\\user.service.js",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001646|",
+              "WhenOpened": "2026-03-03T20:37:44.6Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 8,
+              "Title": "advice.service.js",
+              "DocumentMoniker": "C:\\wouter\\docs\\wouter_apps\\unsolicited_advice_frontend\\src\\_services\\advice.service.js",
+              "RelativeDocumentMoniker": "src\\_services\\advice.service.js",
+              "ToolTip": "C:\\wouter\\docs\\wouter_apps\\unsolicited_advice_frontend\\src\\_services\\advice.service.js",
+              "RelativeToolTip": "src\\_services\\advice.service.js",
+              "ViewState": "AgIAAA4AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001646|",
+              "WhenOpened": "2026-03-03T20:37:19.632Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 6,
+              "Title": "AddEdit.jsx",
+              "DocumentMoniker": "C:\\wouter\\docs\\wouter_apps\\unsolicited_advice_frontend\\src\\advices\\AddEdit.jsx",
+              "RelativeDocumentMoniker": "src\\advices\\AddEdit.jsx",
+              "ToolTip": "C:\\wouter\\docs\\wouter_apps\\unsolicited_advice_frontend\\src\\advices\\AddEdit.jsx",
+              "RelativeToolTip": "src\\advices\\AddEdit.jsx",
+              "ViewState": "AgIAAKkAAAAAAAAAAAAiwMYAAAABAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003663|",
+              "WhenOpened": "2026-03-03T20:18:32.177Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 9,
+              "Title": "Index.jsx",
+              "DocumentMoniker": "C:\\wouter\\docs\\wouter_apps\\unsolicited_advice_frontend\\src\\advices\\Index.jsx",
+              "RelativeDocumentMoniker": "src\\advices\\Index.jsx",
+              "ToolTip": "C:\\wouter\\docs\\wouter_apps\\unsolicited_advice_frontend\\src\\advices\\Index.jsx",
+              "RelativeToolTip": "src\\advices\\Index.jsx",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003663|",
+              "WhenOpened": "2026-03-03T20:18:26.93Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 10,
+              "Title": "List.jsx",
+              "DocumentMoniker": "C:\\wouter\\docs\\wouter_apps\\unsolicited_advice_frontend\\src\\advices\\List.jsx",
+              "RelativeDocumentMoniker": "src\\advices\\List.jsx",
+              "ToolTip": "C:\\wouter\\docs\\wouter_apps\\unsolicited_advice_frontend\\src\\advices\\List.jsx",
+              "RelativeToolTip": "src\\advices\\List.jsx",
+              "ViewState": "AgIAAC4AAAAAAAAAAAAgwEsAAAAQAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003663|",
+              "WhenOpened": "2026-03-03T20:16:23.675Z",
+              "EditorCaption": ""
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}
