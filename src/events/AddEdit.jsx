@@ -58,7 +58,7 @@ function AddEdit({ history, match }) {
             // get event and set form fields
             eventService.getById(id).then(event => {
                 console.log(event);
-                const fields = ['description', 'eventDate', 'userid', 'adviceid'];
+                const fields = ['description', 'eventDate', 'userid', 'adviceid', 'eventFilename'];
                 fields.forEach(field => setValue(field, event[field]));
 
                 const userresults = [];
@@ -167,6 +167,13 @@ function AddEdit({ history, match }) {
                         })}
                     </select>
                     <div className="invalid-feedback">{errors.adviceid?.message}</div>
+                </div>
+            </div>
+            <div className="form-row">
+                <div className="form-group col-7">
+                    <label>Filename</label>
+                    <input name="eventFilename" type="text" ref={register} className={`form-control ${errors.eventFilename ? 'is-invalid' : ''}`} />
+                    <div className="invalid-feedback">{errors.eventFilename?.message}</div>
                 </div>
             </div>
             <div className="form-group">

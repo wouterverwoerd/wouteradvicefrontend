@@ -32,7 +32,7 @@ function List({ match }) {
                         <th style={{ width: '30%' }}>Event Date</th>
                         <th style={{ width: '15%' }}>UserID</th>
                         <th style={{ width: '15%' }}>AdviceID</th>
-                        <th style={{ width: '10%' }}></th>
+                        <th style={{ width: '10%' }}>Event Filename</th>
                     </tr>
                 </thead>
                 <tbody>
@@ -42,6 +42,7 @@ function List({ match }) {
                             <td>{event.eventDate}</td>
                             <td>{event.userid}</td>
                             <td>{event.adviceid}</td>
+                            <td>{event.eventFilename}</td>
                             <td style={{ whiteSpace: 'nowrap' }}>
                                 <Link to={`${path}/edit/${event.id}`} className="btn btn-sm btn-primary mr-1">Edit</Link>
                                 <button onClick={() => deleteEvent(event.id)} className="btn btn-sm btn-danger btn-delete-event" disabled={event.isDeleting}>

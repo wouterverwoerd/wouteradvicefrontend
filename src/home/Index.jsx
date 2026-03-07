@@ -54,6 +54,12 @@ function Home() {
                                             <tr key={event3.eventID}>
                                                 <td>{event3.eventDate}</td>
                                                 <td>{event3.eventDescription}</td>
+                                                <td><a href={`${baseUrl}${event3.eventFilename}`} rel="noopener noreferrer" target='_blank'><img width={`150px`} src={`${baseUrl}${event3.eventFilename}`}
+                                                    onError={({ currentTarget }) => {
+                                                        currentTarget.onerror = null; // prevents looping
+                                                        currentTarget.src = "https://wouterverwoerd.github.io/advicefiles/noimage.jpg";
+                                                    }}
+                                                /></a></td>
                                                 <td style={{ whiteSpace: 'nowrap' }}>
                                                     <Link to={`events/edit/${event3.eventID}`} className="btn btn-sm btn-primary mr-1">Event Details</Link>
                                                 </td>
