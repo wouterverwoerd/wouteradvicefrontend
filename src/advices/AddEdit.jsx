@@ -134,12 +134,12 @@ function AddEdit({ history, match }) {
             <div className="form-row">
                 <div className="form-group col-5">
                     <label>Content</label>
-                    <input name="content" type="text" ref={register} className={`form-control ${errors.content ? 'is-invalid' : ''}`} />
+                    <textarea rows={5} cols={50} name="content" type="text" ref={register} className={`form-control ${errors.content ? 'is-invalid' : ''}`} />
                     <div className="invalid-feedback">{errors.content?.message}</div>
                 </div>
             </div>
             <div className="form-row">
-                <div className="form-group col-7">
+                <div className="form-group col-5">
                     <label>Filename</label>
                     <input value={selectedFile} name="filename" type="text" ref={register} className={`form-control ${errors.filename ? 'is-invalid' : ''}`} />
                     <div className="invalid-feedback">{errors.filename?.message}</div>
@@ -155,7 +155,7 @@ function AddEdit({ history, match }) {
             </div>
 
             <div className="form-row">
-                <div className="form-group col-1">
+                <div className="form-group col-5">
                     <label>From User ID</label>
                     <select name="userid" ref={register} className={`form-control ${errors.role ? 'is-invalid' : ''}`}>
                         {options.map((option) => {
@@ -171,7 +171,7 @@ function AddEdit({ history, match }) {
             </div>
 
             <div className="form-row">
-                <div className="form-group col-1">
+                <div className="form-group col-5">
                     <label>To User ID</label>
                     <select name="touserid" ref={register} className={`form-control ${errors.role ? 'is-invalid' : ''}`}>
                         {tooptions.map((tooption) => {

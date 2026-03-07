@@ -6,7 +6,7 @@ import { eventService } from '@/_services';
 function Home() {
     const { path } = "/events";
     const [events, setEvents] = useState(null);
-    const baseUrl = "http://localhost/files/";
+    const baseUrl = "https://wouterverwoerd.github.io/advicefiles/";
 
     useEffect(() => {
         eventService.getCombined().then(x => setEvents(x));
@@ -30,14 +30,21 @@ function Home() {
                 <thead>
                     <tr>
                         <th style={{ width: '50%' }}>Content</th>
+                        <th style={{ width: '10%' }}>Link</th>
                         <th style={{ width: '10%' }}>Edit</th>
-                        <th style={{ width: '40%' }}>Events</th>
+                        <th style={{ width: '30%' }}>Events</th>
                     </tr>
                 </thead>
                 <tbody>
                     {events2 && events2.map(event2 =>
                         <tr key={event2.adviceID}>
                             <td>{event2.adviceDescription}</td>
+                            <td><a href={`${baseUrl}${event2.adviceFilename}`} rel="noopener noreferrer" target='_blank'><img width={`150px`} src={`${baseUrl}${event2.adviceFilename}`}
+                                onError={({ currentTarget }) => {
+                                    currentTarget.onerror = null; // prevents looping
+                                    currentTarget.src = "https://wouterverwoerd.github.io/advicefiles/noimage.jpg";
+                                }}
+                            /></a></td>
                             <td style={{ whiteSpace: 'nowrap' }}>
                                 <Link to={`advices/edit/${event2.adviceID}`} className="btn btn-sm btn-primary mr-1">Advice Details</Link>
                             </td>

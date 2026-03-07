@@ -132,7 +132,7 @@ function AddEdit({ history, match }) {
             <div className="form-row">
                 <div className="form-group col-7">
                     <label>Description</label>
-                    <input name="description" type="text" ref={register} className={`form-control ${errors.description ? 'is-invalid' : ''}`} />
+                    <textarea rows={5} cols={50} name="description" type="text" ref={register} className={`form-control ${errors.description ? 'is-invalid' : ''}`} />
                     <div className="invalid-feedback">{errors.description?.message}</div>
                 </div>
             </div>
