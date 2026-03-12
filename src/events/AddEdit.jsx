@@ -126,6 +126,10 @@ function AddEdit({ history, match }) {
         }
     }, []);
 
+    var curr = new Date();
+    curr.setDate(curr.getDate() + 0);
+    var date = curr.toISOString().substring(0, 10);
+
     return (
         <form onSubmit={handleSubmit(onSubmit)} onReset={reset}>
             <h1>{isAddMode ? 'Add Event' : 'Edit Event'}</h1>
@@ -139,7 +143,7 @@ function AddEdit({ history, match }) {
             <div className="form-row">
                 <div className="form-group col-5">
                     <label>Event Date</label>
-                    <input name="eventDate" type="text" ref={register} className={`form-control ${errors.eventDate ? 'is-invalid' : ''}`} />
+                    <input defaultValue={date} name="eventDate" type="text" ref={register} className={`form-control ${errors.eventDate ? 'is-invalid' : ''}`} />
                     <div className="invalid-feedback">{errors.eventDate?.message}</div>
                 </div>
                 <div className="form-group col">
@@ -172,7 +176,7 @@ function AddEdit({ history, match }) {
             <div className="form-row">
                 <div className="form-group col-7">
                     <label>Filename</label>
-                    <input name="eventFilename" type="text" ref={register} className={`form-control ${errors.eventFilename ? 'is-invalid' : ''}`} />
+                    <input defaultValue="NoFile" name="eventFilename" type="text" ref={register} className={`form-control ${errors.eventFilename ? 'is-invalid' : ''}`} />
                     <div className="invalid-feedback">{errors.eventFilename?.message}</div>
                 </div>
             </div>

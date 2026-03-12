@@ -128,6 +128,10 @@ function AddEdit({ history, match }) {
         }
     };
 
+    var curr = new Date();
+    curr.setDate(curr.getDate() + 0);
+    var date = curr.toISOString().substring(0, 10);
+
     return (
         <form onSubmit={handleSubmit(onSubmit)} onReset={reset}>
             <h1>{isAddMode ? 'Add Advice' : 'Edit Advice'}</h1>
@@ -141,7 +145,7 @@ function AddEdit({ history, match }) {
             <div className="form-row">
                 <div className="form-group col-5">
                     <label>Filename</label>
-                    <input value={selectedFile} name="filename" type="text" ref={register} className={`form-control ${errors.filename ? 'is-invalid' : ''}`} />
+                    <input defaultValue="NoFile" value={selectedFile} name="filename" type="text" ref={register} className={`form-control ${errors.filename ? 'is-invalid' : ''}`} />
                     <div className="invalid-feedback">{errors.filename?.message}</div>
                 </div>
 

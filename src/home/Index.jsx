@@ -26,85 +26,74 @@ function Home() {
             <h1>Advice Instances</h1>
             <Link to={`advices/add`} className="btn btn-sm btn-success mb-2">Add Advice Instance</Link>
 
-            <table className="table table-striped">
-                <thead>
-                    <tr>
-                        <th style={{ width: '50%' }}>Content</th>
-                        <th style={{ width: '10%' }}>Link</th>
-                        <th style={{ width: '10%' }}>Edit</th>
-                        <th style={{ width: '30%' }}>Events</th>
-                    </tr>
-                </thead>
-                <tbody>
-                    {events2 && events2.map(event2 =>
-                        <tr key={event2.adviceID}>
-                            <td>{event2.adviceDescription}</td>
-                            <td><a href={`${baseUrl}${event2.adviceFilename}`} rel="noopener noreferrer" target='_blank'><img width={`150px`} src={`${baseUrl}${event2.adviceFilename}`}
+            
+            {events2 && events2.map(event2 =>
+                <div class="advicecontainer" style={{ border: '1px solid black', padding: '10px', margin: '10px', display: 'inline-block', width: '100%', clear: 'both' }}>
+                    <div style={{ float: 'left', width: '33%' }}>{event2.adviceDescription}</div>
+                    <div style={{ float: 'left', width: '33%', margin: '10px' }}><a href={`${baseUrl}${event2.adviceFilename}`} rel="noopener noreferrer" target='_blank'><img width={`150px`} src={`${baseUrl}${event2.adviceFilename}`}
                                 onError={({ currentTarget }) => {
                                     currentTarget.onerror = null; // prevents looping
                                     currentTarget.src = "https://wouterverwoerd.github.io/advicefiles/noimage.jpg";
                                 }}
-                            /></a></td>
-                            <td style={{ whiteSpace: 'nowrap' }}>
+                            /></a></div>
+                    <div style={{ whiteSpace: 'nowrap', float: 'left', width: '10%' }}>
                                 <Link to={`advices/edit/${event2.adviceID}`} className="btn btn-sm btn-primary mr-1">Advice Details</Link>
-                            </td>
+                    </div>
                             {event2.Events.length > 0 &&
-                                    <table className="table">
+                        <div className="table" style={{ }}>
                                         {event2.Events && event2.Events.map(event3 =>
-                                            <tr key={event3.eventID}>
-                                                <td>{event3.eventDate}</td>
-                                                <td>{event3.eventDescription}</td>
-                                                <td><a href={`${baseUrl}${event3.eventFilename}`} rel="noopener noreferrer" target='_blank'><img width={`150px`} src={`${baseUrl}${event3.eventFilename}`}
+                                            <div style={{ display: 'inline-block', width: '100%', clear: 'both', padding: '10px', margintop: '10px', border: '1px solid black' }}>
+                                                <div style={{ float: 'left', width: '10%' }}>{event3.eventDate}</div>
+                                                <div style={{ float: 'left', width: '30%' }}>{event3.eventDescription}</div>
+                                                <div style={{ float: 'left', width: '30%' }}><a href={`${baseUrl}${event3.eventFilename}`} rel="noopener noreferrer" target='_blank'><img width={`150px`} src={`${baseUrl}${event3.eventFilename}`}
                                                     onError={({ currentTarget }) => {
                                                         currentTarget.onerror = null; // prevents looping
                                                         currentTarget.src = "https://wouterverwoerd.github.io/advicefiles/noimage.jpg";
                                                     }}
-                                                /></a></td>
-                                                <td style={{ whiteSpace: 'nowrap' }}>
+                                                /></a></div>
+                                                <div style={{ whiteSpace: 'nowrap', float: 'left', width: '10%' }}>
                                                     <Link to={`events/edit/${event3.eventID}`} className="btn btn-sm btn-primary mr-1">Event Details</Link>
-                                                </td>
-                                            </tr>
-                                    )}
-                                    <tr>
-                                        <td style={{ whiteSpace: 'nowrap' }}>
-                                            <Link to={`events/add`} className="btn btn-sm btn-primary mr-1">Add Event</Link>
-                                        </td>
-                                    </tr>
-                                    </table>
+                                                </div>
+                                            </div>
+                                        )}
+                                    <div style={{ display: 'inline-block', width: '100%', clear: 'both' }}>
+                                                    <div>
+                                                        <Link to={`events/add`} className="btn btn-sm btn-primary mr-1">Add Event</Link>
+                                                    </div>
+                                    </div>
+                               </div>
                             }
                             {!event2.Events.length &&
-                                <table className="table table-striped">
-                                    <tr>
-                                        <td colSpan="4" className="text-center">
+                                <div className="table table-striped">
+                                    <div>
+                                        
                                             <div className="p-2">No Events To Display</div>
-                                        </td>
-                                        <td style={{ whiteSpace: 'nowrap' }}>
+                                        
+                                        <div>
                                             <Link to={`events/add`} className="btn btn-sm btn-primary mr-1">Add Event</Link>
-                                        </td>
-                                    </tr>
-                                </table>
+                                        </div>
+                                    </div>
+                                </div>
                             }
                             
-                        </tr>
+                        </div>
                     )}
                     {!events2 &&
-                        <tr>
-                            <td colSpan="4" className="text-center">
+                        <div>
+                            <div colSpan="4" className="text-center">
                                 <div className="spinner-border spinner-border-lg align-center"></div>
-                            </td>
-                        </tr>
+                            </div>
+                        </div>
                     }
                     {events2 && !events2.length &&
-                        <tr>
-                            <td colSpan="4" className="text-center">
+                        <div>
+                            <div colSpan="4" className="text-center">
                                 <div className="p-2">No Events To Display</div>
-                            </td>
-                        </tr>
+                            </div>
+                        </div>
                     }
-                </tbody>
-            </table>
+                </div>
 
-        </div>
     );
 }
 
