@@ -58,7 +58,7 @@ function Home() {
                                         )}
                                     <div style={{ display: 'inline-block', width: '100%', clear: 'both' }}>
                                                     <div>
-                                                        <Link to={`events/add`} className="btn btn-sm btn-primary mr-1">Add Event</Link>
+                                    <Link to={`events/add?adviceid=${event2.adviceID}`} className="btn btn-sm btn-primary mr-1">Add Event</Link>
                                                     </div>
                                     </div>
                                </div>
@@ -67,7 +67,7 @@ function Home() {
                                 <div className="table table-striped">
                                     <div>
                                         
-                                            <div className="p-2">No Events To Display</div>
+                                            <div className="p-2"></div>
                                         
                                         <div>
                                             <Link to={`events/add`} className="btn btn-sm btn-primary mr-1">Add Event</Link>

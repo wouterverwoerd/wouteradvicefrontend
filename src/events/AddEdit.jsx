@@ -5,12 +5,14 @@ import { yupResolver } from '@hookform/resolvers/yup';
 import * as Yup from 'yup';
 
 import { eventService, alertService, userService, adviceService } from '@/_services';
-
+import { useParams } from 'react-router-dom';
 import { useNavigate } from 'react-router-dom';
+
 
 function AddEdit({ history, match }) {
     const { id } = match.params;
     const isAddMode = !id;
+
 
     // form validation rules 
     const validationSchema = Yup.object().shape({
@@ -130,6 +132,18 @@ function AddEdit({ history, match }) {
     curr.setDate(curr.getDate() + 0);
     var date = curr.toISOString().substring(0, 10);
 
+    // console.log("x");
+    const queryString = window.location.search;
+
+    // Create a URLSearchParams object to work with the query string
+    const params = new URLSearchParams(queryString);
+
+    // Get the value of a specific query parameter (e.g., "id")
+   var adviceId = params.get('adviceid');
+
+   console.log(adviceId);
+
+
     return (
         <form onSubmit={handleSubmit(onSubmit)} onReset={reset}>
             <h1>{isAddMode ? 'Add Event' : 'Edit Event'}</h1>
@@ -161,7 +175,7 @@ function AddEdit({ history, match }) {
                 </div>
                 <div className="form-group col">
                     <label>Advice ID</label>
-                    <select name="adviceid" ref={register} className={`form-control ${errors.role ? 'is-invalid' : ''}`}>
+                    <select value={adviceId} name="adviceid" ref={register} className={`form-control ${errors.role ? 'is-invalid' : ''}`}>
                         {adviceoptions.map((option) => {
                             return (
                                 <option key={option.value} value={option.value}>
