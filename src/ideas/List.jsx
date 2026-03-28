@@ -6,6 +6,8 @@ import { ideaService } from '@/_services';
 function List({ match }) {
     const { path } = match;
     const [ideas, setIdeas] = useState(null);
+    const baseUrl = "https://wouterverwoerd.github.io/advicefiles/";
+
 
     useEffect(() => {
         ideaService.getAll().then(x => setIdeas(x));
@@ -38,7 +40,13 @@ function List({ match }) {
                         <tr key={idea.id}>
                             <td>{idea.description}</td>
                             <td>{idea.ideaDate}</td>
-                            <td>{idea.ideaFilename}</td>
+                            <td>{idea.ideaFilename}
+                                <a href={`${baseUrl}${idea.ideaFilename}`} rel="noopener noreferrer" target='_blank'><img width={`150px`} src={`${baseUrl}${idea.ideaFilename}`}
+                                    onError={({ currentTarget }) => {
+                                        currentTarget.onerror = null; // prevents looping
+                                        currentTarget.src = "https://wouterverwoerd.github.io/advicefiles/noimage.jpg";
+                                    }}
+                                /></a></td>
                             <td style={{ whiteSpace: 'nowrap' }}>
                                 <Link to={`${path}/edit/${idea.id}`} className="btn btn-sm btn-primary mr-1">Edit</Link>
                                 <button onClick={() => deleteIdea(idea.id)} className="btn btn-sm btn-danger btn-delete-idea" disabled={idea.isDeleting}>
