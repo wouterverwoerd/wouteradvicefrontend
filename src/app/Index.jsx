@@ -6,6 +6,7 @@ import { Home } from '@/home';
 import { Users } from '@/users';
 import { Advices } from '@/advices';
 import { Events } from '@/events';
+import { Ideas } from '@/ideas';
 
 
 function App() {
@@ -37,6 +38,7 @@ function App() {
                     <Route path="/users" component={Users} />
                     <Route path="/advices" component={Advices} />
                     <Route path="/events" component={Events} />
+                    <Route path="/ideas" component={Ideas} />
                     <Redirect from="*" to="/" />
                 </Switch>
             </div>
