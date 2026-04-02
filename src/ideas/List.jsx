@@ -25,7 +25,7 @@ function List({ match }) {
 
     return (
         <div>
-            <h1>Ideas</h1>
+            <h1>Things to think about</h1>
             <Link to={`${path}/add`} className="btn btn-sm btn-success mb-2">Add Idea</Link>
             <table className="table table-striped">
                 <thead>

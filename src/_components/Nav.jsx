@@ -9,7 +9,7 @@ function Nav() {
                 <NavLink to="/users" className="nav-item nav-link">Users</NavLink>
                 <NavLink to="/advices" className="nav-item nav-link">Advices</NavLink>
                 <NavLink to="/events" className="nav-item nav-link">Events</NavLink>
-                <NavLink to="/ideas" className="nav-item nav-link">Ideas</NavLink>
+                <NavLink to="/ideas" className="nav-item nav-link">Things to think about</NavLink>
             </div>
         </nav>
     );
