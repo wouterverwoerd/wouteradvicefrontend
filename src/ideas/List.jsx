@@ -48,6 +48,7 @@ function List({ match }) {
                                     }}
                                 /></a></td>
                             <td style={{ whiteSpace: 'nowrap' }}>
+                                <a href={`https://idea-evaluator-and-improver-282464207064.asia-southeast1.run.app/?title=idea ${idea.ideaDate}&desc=${idea.description}&auto=false`} className="btn btn-sm btn-primary mr-1" target="_blank">Evaluate idea</a>
                                 <Link to={`${path}/edit/${idea.id}`} className="btn btn-sm btn-primary mr-1">Edit</Link>
                                 <button onClick={() => deleteIdea(idea.id)} className="btn btn-sm btn-danger btn-delete-idea" disabled={idea.isDeleting}>
                                     {idea.isDeleting 
