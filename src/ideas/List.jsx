@@ -48,8 +48,11 @@ function List({ match }) {
                                     }}
                                 /></a></td>
                             <td style={{ whiteSpace: 'nowrap' }}>
-                                <a href={`https://idea-evaluator-and-improver-282464207064.asia-southeast1.run.app/?title=idea ${idea.ideaDate}&desc=${idea.description}&auto=false`} className="btn btn-sm btn-primary mr-1" target="_blank">Evaluate idea</a>
-                                <Link to={`${path}/edit/${idea.id}`} className="btn btn-sm btn-primary mr-1">Edit</Link>
+                                <div style={{ margin: '5px' }}><a href={`https://wouterverwoerd.github.io/advicefiles/todolist/index.html?todo=${idea.description}`} className="btn btn-sm btn-primary mr-1" target="_blank">ToDoList idea</a></div>
+                                <div style={{ margin: '5px' }}><a href={`https://idea-evaluator-and-improver-282464207064.asia-southeast1.run.app/?title=idea ${idea.ideaDate}&desc=${idea.description}&auto=false`} className="btn btn-sm btn-primary mr-1" target="_blank">Business idea</a></div>
+                                <div style={{ margin: '5px' }}><a href={`https://recipesage.com/app/list/main`} className="btn btn-sm btn-primary mr-1" target="_blank">Recipe</a></div>
+                                <div style={{ margin: '5px' }}><a href={`https://keep.google.com/u/0/#home`} className="btn btn-sm btn-primary mr-1" target="_blank">Archive</a></div>
+                                <div style={{ margin: '5px' }}><Link to={`${path}/edit/${idea.id}`} className="btn btn-sm btn-primary mr-1">Edit</Link></div>
                                 <button onClick={() => deleteIdea(idea.id)} className="btn btn-sm btn-danger btn-delete-idea" disabled={idea.isDeleting}>
                                     {idea.isDeleting 
                                         ? <span className="spinner-border spinner-border-sm"></span>
