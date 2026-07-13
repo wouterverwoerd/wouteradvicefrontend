@@ -1,12 +1,215 @@
-// global styles
-a { cursor: pointer; }
+// ==========================================
+// Variables & Palette
+// ==========================================
+@bg-dark: #0f172a; // Deep slate navy
+@card-bg: #1e293b; // Rich slate gray for the card container
+@accent-neon: #52ffa8; // Vibrant neon-green
+@accent-glow: rgba(82, 255, 168, 0.4);
+@text-light: #f8fafc; // Near-white for high-priority text
+@text-cyan: #cee3e9; // Readable, soft cyan-gray for body text
+@text-muted: #64748b; // Mid-gray for secondary elements
+@font-family: 'Space Grotesk', system-ui, -apple-system, sans-serif;
 
-.app-container {
-    min-height: 350px;
+// ==========================================
+// Base & Global Contrast Overrides
+// ==========================================
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
 }
 
-.btn-delete-user {
-    width: 40px;
+body {
+    background-color: @bg-dark;
+    color: @text-cyan; // Enforces a readable baseline color across the site
+    font-family: @font-family;
+    min-height: 100vh;
+    padding: 16px;
+    background-image: radial-gradient(circle at center, #1e293b 0%, #0f172a 100%);
+}
+
+// Ensure all default HTML text and container tags are highly legible
+p, span, div, li, h1, h2, h3, h4, h5, h6 {
+    color: #a1a1a1;
+}
+
+// ==========================================
+// Safe, High-Contrast Link Styling
+// ==========================================
+// This overrides default black, dark blue, and dark purple (visited) browser links
+a {
+    color: @accent-neon;
+    text-decoration: none;
+    font-weight: 700;
+    transition: color 0.25s ease;
+    display: inline-block;
+    // Forces visited links to stay bright instead of turning dark purple
+    &:visited {
+        color: @accent-neon;
+    }
+
+    &:hover, &:focus {
+        color: @text-light;
+        text-decoration: underline;
+    }
+}
+
+// ==========================================
+// Horizontal Row Alignment for Links & Nav
+// ==========================================
+// Forces any navigation menu, links wrapper, or footer to display in a horizontal row
+nav, .nav, footer, .footer, .links, .nav-links, .links-container {
+    display: flex;
+    flex-direction: row; // Forces horizontal alignment
+    justify-content: center;
+    align-items: center;
+    gap: 1.5rem;
+    flex-wrap: wrap; // Wraps cleanly on mobile without compressing elements
+    width: 100%;
+    margin: 24px 0;
+
+    ul {
+        display: flex;
+        flex-direction: row;
+        list-style: none;
+        padding: 0;
+        margin: 0;
+        gap: 1.5rem;
+    }
+
+    li {
+        display: inline-block;
+    }
+}
+
+// ==========================================
+// The Fluid Advice Card (Isolated Styles Only)
+// ==========================================
+// Targets ONLY specific card classes to keep from overriding your page-wide layout
+.card, .advice-card, .advice-box, [class*="card"] {
+    position: relative; // Allows absolute positioning of the bottom dice button
+    background-color: @card-bg;
+    border-radius: 16px;
+    width: 100%;
+    max-width: 540px;
+    margin: 40px auto; // Centers the card on the page horizontally
+    // Fluid padding: tighter on the sides for mobile screen real estate,
+    // with a large bottom gap (64px) to prevent the absolute button from overlapping text
+    padding: 32px 20px 64px 20px;
     text-align: center;
-    box-sizing: content-box;
+    box-shadow: 0 20px 40px rgba(0, 0, 0, 0.4);
+    border: 1px solid rgba(255, 255, 255, 0.05);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: auto;
+    min-height: min-content;
+
+    @media (min-width: 480px) {
+        padding: 40px 40px 64px 40px;
+    }
+    // Header / Advice ID
+    .advice-id, .id, .num, .number, h2, h3, h4, p:first-of-type {
+        color: @accent-neon;
+        font-size: 11px;
+        font-weight: 700;
+        letter-spacing: 3.5px;
+        text-transform: uppercase;
+        margin-bottom: 24px;
+        line-height: 1.2;
+    }
+    // Advice Quote Text
+    .advice-text, .text, .quote, h1, blockquote, q {
+        color: @text-cyan;
+        font-weight: 800;
+        line-height: 1.45;
+        margin-bottom: 32px;
+        font-size: clamp(20px, 5.5vw, 28px); // Seamless mobile-to-desktop scaling
+
+        &:before, &:after {
+            content: ""; // Clears default browser blockquote characters
+        }
+    }
+    // Responsive Divider Line
+    .divider, .line, hr, img[src*="divider"], picture {
+        display: block;
+        width: 100%;
+        max-width: 100%;
+        height: auto;
+        margin-bottom: 16px;
+        border: none;
+        opacity: 0.8;
+
+        img {
+            display: block;
+            width: 100%;
+            height: auto;
+            object-fit: contain;
+        }
+    }
+    // Circular Dice Button
+    .dice, .btn, .button, button {
+        position: absolute;
+        bottom: 0;
+        left: 50%;
+        transform: translate(-50%, 50%);
+        // Static dimensions protect the circle shape from stretching or flatting
+        width: 64px;
+        height: 64px;
+        min-width: 64px;
+        min-height: 64px;
+        flex-shrink: 0;
+        background-color: @accent-neon;
+        border-radius: 50%;
+        border: none;
+        cursor: pointer;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        outline: none;
+        transition: all 0.25s cubic-bezier(0.25, 0.8, 0.25, 1);
+
+        img, svg {
+            width: 24px;
+            height: 24px;
+            flex-shrink: 0;
+            transition: transform 0.4s ease;
+        }
+
+        &:hover {
+            box-shadow: 0 0 24px @accent-glow;
+            transform: translate(-50%, 50%) scale(1.05);
+
+            img, svg {
+                transform: rotate(180deg);
+            }
+        }
+
+        &:active {
+            transform: translate(-50%, 50%) scale(0.95);
+        }
+
+        &:disabled {
+            opacity: 0.6;
+            cursor: not-allowed;
+            box-shadow: none !important;
+            transform: translate(-50%, 50%) scale(1) !important;
+
+            img, svg {
+                animation: spin 1s infinite linear;
+            }
+        }
+    }
+}
+
+// Fallback rotation for active/fetching button states
+@keyframes spin {
+    from {
+        transform: rotate(0deg);
+    }
+
+    to {
+        transform: rotate(360deg);
+    }
 }
