@@ -49,6 +49,8 @@ function List({ match }) {
                                 /></a></td>
                             <td style={{ whiteSpace: 'nowrap' }}>
                                 <div style={{ margin: '5px' }}><a href={`https://word-processor-282464207064.asia-southeast1.run.app/?text_raw=${idea.description}&title=${idea.description}`} className="btn btn-sm btn-primary mr-1" target="_blank">Expand idea</a></div>
+                                <div style={{ margin: '5px' }}><a href={`https://word-processor-282464207064.asia-southeast1.run.app/?text_raw=${idea.description}&title=${idea.description}&tab=expenses`} className="btn btn-sm btn-primary mr-1" target="_blank">Record expense</a></div>
+                                <div style={{ margin: '5px' }}><a href={`https://word-processor-282464207064.asia-southeast1.run.app/?text_raw=${idea.description}&title=${idea.description}&tab=planner`} className="btn btn-sm btn-primary mr-1" target="_blank">Record todo item</a></div>
                                 <div style={{ margin: '5px' }}><Link to={`${path}/edit/${idea.id}`} className="btn btn-sm btn-primary mr-1">Edit</Link></div>
                                 <button onClick={() => deleteIdea(idea.id)} className="btn btn-sm btn-danger btn-delete-idea" disabled={idea.isDeleting}>
                                     {idea.isDeleting 
